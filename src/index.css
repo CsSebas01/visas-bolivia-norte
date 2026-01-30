@@ -1,0 +1,144 @@
+/* Author: Sebastian escobar */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: radial-gradient(circle at top, #1c3faa, #0b1d3a 70%);
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1c3faa, #0b1d3a 70%);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* ✨ Partículas suaves */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.08), transparent 35%),
+    radial-gradient(circle at 80% 70%, rgba(77,163,255,0.15), transparent 40%);
+  animation: floatBg 18s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+@keyframes floatBg {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+a {
+  text-decoration: none;
+}
+
+.link-card {
+  background: linear-gradient(180deg, #132c63, #0f2554);
+  border-radius: 26px;
+  padding: 34px 26px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ✨ Partículas sutiles en movimiento */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  background-image:
+    radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    radial-gradient(rgba(255,255,255,0.02) 2px, transparent 2px);
+  background-size: 60px 60px, 120px 120px;
+  opacity: 0.9;
+  filter: blur(0.2px);
+  animation: particlesMove 30s linear infinite;
+}
+
+@keyframes particlesMove {
+  from {
+    background-position: 0 0, 0 0;
+  }
+  to {
+    background-position: 1000px 800px, -800px -600px;
+  }
+}
+
+/* 🔘 Botón estilo Linktree premium - claro para contraste sobre fondo azul */
+.linktree-btn {
+  padding: 15px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #f4f7ff, #e6ecff);
+  color: #0b1d3a;
+  font-weight: 600;
+  border: none;
+  transition: all 0.25s ease;
+}
+
+.linktree-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow:
+    0 0 0 2px rgba(77,163,255,0.6),
+    0 15px 35px rgba(77,163,255,0.45);
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+/* 🔘 Social round buttons */
+.socials {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.social-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 6px 16px rgba(16, 24, 40, 0.12);
+}
+
+.social-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 14px 36px rgba(16, 24, 40, 0.25);
+}
+
+/* colores por plataforma */
+.social-btn.facebook { background: linear-gradient(180deg,#3b5998,#2d4373); }
+.social-btn.whatsapp { background: linear-gradient(180deg,#25D366,#128C7E); }
+.social-btn.tiktok { background: linear-gradient(180deg,#0b0b0b,#1a1a1a); }
+.social-btn.instagram { background: radial-gradient(circle at 30% 30%, #fdf497 0%, #f58529 30%, #d6249f 60%, #285AEB 90%); }
+.social-btn.twitter { background: linear-gradient(180deg,#1DA1F2,#0d95e8); }
+.social-btn.youtube { background: linear-gradient(180deg,#ff0000,#cc0000); }
+
+/* focus visible */
+.social-btn:focus-visible, .linktree-btn:focus-visible {
+  outline: 3px solid rgba(77,163,255,0.25);
+  outline-offset: 4px;
+  border-radius: 18px;
+}
