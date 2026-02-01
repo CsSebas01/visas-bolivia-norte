@@ -38,10 +38,3 @@
 - `src/data/links.js` — edita `mainLinks` y `tramites` para cambiar enlaces y lista
 - `src/index.css` — estilos globales y animaciones
 
----
-
-Si quieres, puedo:
-- Hacer un commit y push al repo (si está configurado). 🔧
-- Preparar una versión lista para Netlify/Vercel. 🚀
-
-Gracias — dime qué más quieres ajustar.
