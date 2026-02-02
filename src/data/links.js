@@ -8,7 +8,7 @@ export const mainLinks = [
   },
   {
     title: "Ubicación",
-    url: "https://maps.app.goo.gl/C9R4FA1vjRBRDueh8?g_st=aw",
+    url: "https://maps.app.goo.gl/D9j2zhDu4Z9M2pkW6",
     icon: "📍"
   }
 ]
