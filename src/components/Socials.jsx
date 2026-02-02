@@ -15,7 +15,7 @@ export default function Socials() {
         <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" style={{ width: '20px', height: '20px' }} />
       </a>
 
-      <a className="social-btn tiktok" href="https://www.tiktok.com/@lesliececiliaclarospach0?_r=1&_t=ZS-93W01zVcXkC" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+      <a className="social-btn tiktok" href="https://www.tiktok.com/@visas.bolivia.nor?_r=1&_t=ZS-93av8x3tnZx" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
         <img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok.png" alt="TikTok" style={{ width: '20px', height: '20px' }} />
       </a>
     </div>
